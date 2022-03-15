@@ -1,0 +1,53 @@
+body{
+    background-color: #FFFFFF;
+    color: black;
+    font-family: 'Roboto';
+    
+}
+
+.header{
+    background: #866DED;
+    font-weight: bold;
+    min-height: 69.5px;
+}
+
+.navLink{
+    padding-left: 44px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.card{
+    background-color: #FFFFFF;
+    border: black;
+    margin: 115px;
+}
+
+.button{
+    background-color: #866DED;
+    border: #FFFFFF;
+    color: #000000;
+}
+
+.button:hover{
+    background-color: #230F72;
+    color: #ffffff;
+}
+
+.footer{
+    background-color: #230F72;
+    margin-top: 10px;
+    padding-top: 15px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.icon{
+    max-width: 22px;
+    margin-left: 5px;
+    margin-right: 30px;
+}

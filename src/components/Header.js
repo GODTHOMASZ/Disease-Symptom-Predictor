@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import { Container, Form, Nav, Navbar, FormControl, Button } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../pages/Styles.css"
-
-import Home from '../pages/Home';
-import Feedback from '../pages/Contacts';
-
-
 export default class Header extends Component {
     render() {
         return (
@@ -22,13 +16,6 @@ export default class Header extends Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-
-                <Router>
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route exact path='/feedback' component={Feedback} />
-                    </Switch>
-                </Router>
             </>
         )
     }

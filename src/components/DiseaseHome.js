@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Card, CardDeck, Container, Form } from 'react-bootstrap';
 import PlaceHolder from "./bg.png";
+import * as ROUTES from '../constants/routes';
+
 
 export default class Home extends Component {
     render() {
@@ -14,7 +16,7 @@ export default class Home extends Component {
                         <Form.Control className='w-25' type="sex" placeholder="Пол"/>
                         <Form.Control className='w-25' type="age" placeholder="Возраст"/>
                     </Form.Group>
-                    <div className='text-center'><Button className="button mt-3" type="submit">Отправить</Button></div>
+                    <div className='text-center'><Button className="button mt-3" href={ROUTES.ANALYSIS}>Отправить</Button></div>
                 </Form>
             </Container>
         )

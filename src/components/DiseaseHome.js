@@ -8,7 +8,7 @@ export default class Home extends Component {
         return (
             <Container>
                 <Form>
-                    <div className='text-center'> <p>Введите свои данные, чтобы продолжить</p></div>
+                    <h4 className='text-center mt-1 mb-2'> <p>Введите свои данные, чтобы продолжить</p></h4>
                     <Form.Group className='d-flex flex-row' controlId="formBasicEmail">
                         <Form.Control className='w-25' type="height" placeholder="Рост"/>
                         <Form.Control className='w-25' type="weight" placeholder="Вес"/>

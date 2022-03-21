@@ -12,7 +12,7 @@ export default function Main() {
         return (
             <div>
                 <h1 className='text-center mt-3 mb-2'>Disease Symptom Predictor</h1>
-                <div className='text-center'>Ниже предсавлены варианты возможных болезней</div>
+                <h4 className='text-center mt-1 mb-2'>Ниже предсавлены варианты возможных болезней</h4>
                 
             </div>
         );

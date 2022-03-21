@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Card, CardDeck, Container, Form } from 'react-bootstrap';
-import PlaceHolder from "./bg.png";
 import * as ROUTES from '../constants/routes';
 
 

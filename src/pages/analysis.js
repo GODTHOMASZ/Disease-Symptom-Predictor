@@ -31,7 +31,7 @@ export default function Main() {
         </div>
       </div>
       <div className='text-center '>
-      <Button className="button mt-3 btn-lg" href={ROUTES.MAIN}>Отправить</Button>
+      <Button className="button mt-3 btn-lg" href={ROUTES.RESULTS}>Отправить</Button>
       </div>
     </div>
   );

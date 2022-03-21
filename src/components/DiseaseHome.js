@@ -7,14 +7,14 @@ export default class Home extends Component {
         return (
             <Container>
                 <Form>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Text> Введите свои данные, чтобы продолжить </Form.Text>
-                        <Form.Control type="height" placeholder="Рост"/>
-                        <Form.Control type="weight" placeholder="Вес"/>
-                        <Form.Control type="sex" placeholder="Пол"/>
-                        <Form.Control type="age" placeholder="Возраст"/>
+                    <div className='text-center'> <p>Введите свои данные, чтобы продолжить</p></div>
+                    <Form.Group className='d-flex flex-row' controlId="formBasicEmail">
+                        <Form.Control className='w-25' type="height" placeholder="Рост"/>
+                        <Form.Control className='w-25' type="weight" placeholder="Вес"/>
+                        <Form.Control className='w-25' type="sex" placeholder="Пол"/>
+                        <Form.Control className='w-25' type="age" placeholder="Возраст"/>
                     </Form.Group>
-                    <Button className="button mt-4" type="submit">Отправить</Button>
+                    <div className='text-center'><Button className="button mt-3" type="submit">Отправить</Button></div>
                 </Form>
             </Container>
         )

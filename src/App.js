@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Card, CardDeck } from "react-bootstrap";
 import "./pages/Styles.css";
+import "@fontsource/roboto"; 
 
 function App() {
   return (

@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import Feedback from '../components/Feedback';
-import "./Styles.css"
 
-export default class Home extends Component {
-    render() {
+export default function Main() {
+        let i = 0;
+        let diseases = [];
+        while (i<5)
+        {
+            diseases[i] = 'говно' + i;
+            i++;
+        }
         return (
-            <Feedback/>
-        )
-    }
+            <div>
+                <h1 className='text-center mt-3 mb-2'>Disease Symptom Predictor</h1>
+                <div className='text-center'>Ниже предсавлены варианты возможных болезней</div>
+                
+            </div>
+        );
 }

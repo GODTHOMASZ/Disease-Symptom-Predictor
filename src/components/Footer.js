@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Container, Form, Nav, Navbar, FormControl, Button } from "react-bootstrap";
 import Logo from './logo.svg';
 import Discord from './discord.svg';
-import "../pages/Styles.css"
 
 export default class Header extends Component {
     render() {

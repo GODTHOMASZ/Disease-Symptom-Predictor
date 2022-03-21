@@ -11,6 +11,9 @@ import "@fontsource/roboto";
 
 const Main = lazy(() => import('./pages/Home'));
 const Analysis = lazy(() => import('./pages/analysis'));
+const Results = lazy(() => import('./pages/results'));
+const Statistics = lazy(() => import('./pages/statistics'));
+const About = lazy(() => import('./pages/about'));
 const NotFound = lazy(() => import('./pages/notFound'));
 
 function App() {
@@ -23,7 +26,10 @@ function App() {
             <Switch>
               <Route exact path={ ROUTES.MAIN } component={Main}/>
               <Route exact path={ ROUTES.ANALYSIS } component={Analysis}/>
-              <Route  component={NotFound}/>
+              <Route exact path={ ROUTES.RESULTS } component={Results}/>
+              <Route exact path={ ROUTES.STATISTICS } component={Statistics}/>
+              <Route exact path={ ROUTES.ABOUT } component={About}/>
+              <Route component={NotFound}/>
             </Switch>
           </Suspense>
         </Router>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import DiseaseHome from '../components/DiseaseHome';
-import "./Styles.css"
 import { Container, Form } from 'react-bootstrap';
 
 export default class Home extends Component {

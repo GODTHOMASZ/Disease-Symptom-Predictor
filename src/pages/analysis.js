@@ -2,11 +2,18 @@ import React, {useState, useEffect, lazy, Suspense } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import AnalysisComp from '../components/AnalysisComp';
+import PropTypes from 'prop-types';
 
 
 
-export default function Main() {
-  
+export default function Analysis(
+  {
+    heightInp,
+    widthInp,
+    sexInp,
+    ageInp,
+  }
+) {
   
   
   return (
@@ -17,9 +24,17 @@ export default function Main() {
       </div>
         
        <div className="">
-          <AnalysisComp/>
+          <AnalysisComp />
       </div>
       
     </div>
   );
 }
+
+
+Analysis.propTypes = {
+  heightInp: PropTypes.number.isRequired,
+  widthInp: PropTypes.number.isRequired,
+  sexInp: PropTypes.string.isRequired,
+  ageInp: PropTypes.number.isRequired,
+};

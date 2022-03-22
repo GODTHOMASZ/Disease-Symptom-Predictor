@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import * as ROUTES from '../constants/routes';
+import PropTypes from 'prop-types';
 import Select from 'react-select';
+import { useHistory  } from 'react-router-dom';
+
+
 
 export default function DiseaseHome() {
         const [heightInp, setHeightInp] = useState('');
@@ -13,8 +17,10 @@ export default function DiseaseHome() {
             { value: 'men', label: 'Муж.', color: '#00B8D9', isFixed: true },
             { value: 'women', label: 'Жен.', color: '#0052CC' },
           ];
-          
+          //value={{heightInp, widthInp, sexInp, ageInp}}
+        
         const isEmpty = heightInp === '' || widthInp === '' || sexInp === null || ageInp === '';
+
 
         return (
             <Container className='text-center'>
@@ -31,8 +37,9 @@ export default function DiseaseHome() {
                         />
                         <Form.Control className='text-center w-25' type="age" placeholder="Возраст" value={ageInp} onChange={({target})=>setAgeInp(target.value)}/>
                     </Form.Group>
-                    <div className='text-center'><Button disabled={isEmpty} className="button mt-3" href={ROUTES.ANALYSIS}>Продолжить</Button></div>
+                    <div className='text-center'><Button disabled={isEmpty} className="button mt-3" onClick = {({target})=>{console.log('fdf')}} href={ROUTES.ANALYSIS}>Продолжить</Button></div>
                 </Form>
             </Container>
         )
 }
+

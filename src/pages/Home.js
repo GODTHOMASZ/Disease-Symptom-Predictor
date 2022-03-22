@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import DiseaseHome from '../components/DiseaseHome';
 import { Container, Form } from 'react-bootstrap';
 
-export default class Home extends Component {
-    render() {
+export default function Home() {
+
         return (
             <>
                 <Container>
@@ -15,4 +15,3 @@ export default class Home extends Component {
             </>
         )
     }
-}

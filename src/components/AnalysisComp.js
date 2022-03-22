@@ -1,5 +1,5 @@
-import React, { useState, useEffect, Component } from 'react';
-import { Button, Card, CardDeck, Container, Form } from 'react-bootstrap';
+import React from 'react';
+import { Button, Container, Form } from 'react-bootstrap';
 import * as ROUTES from '../constants/routes';
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
@@ -18,11 +18,11 @@ export default function AnalysisComp() {
         const animatedComponents = makeAnimated();
         const MyComponent = () => (
             <Select 
-            closeMenuOnSelect={false}
-            components={animatedComponents}
-            isMulti
-            options={colourOptions}
-            className="w-50 rounded p-3 mx-auto"
+                closeMenuOnSelect={false}
+                components={animatedComponents}
+                isMulti
+                options={colourOptions}
+                className="w-50 rounded p-3 mx-auto"
             />
           )
 

@@ -1,9 +1,6 @@
 import React, {useState, useEffect, lazy, Suspense } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
-import { Icon } from '@iconify/react';
-import { Button } from 'react-bootstrap';
-import * as ROUTES from '../constants/routes';
 import AnalysisComp from '../components/AnalysisComp';
 
 

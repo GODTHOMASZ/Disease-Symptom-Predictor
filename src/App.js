@@ -14,6 +14,7 @@ const Analysis = lazy(() => import('./pages/analysis'));
 const Results = lazy(() => import('./pages/results'));
 const Statistics = lazy(() => import('./pages/statistics'));
 const About = lazy(() => import('./pages/about'));
+const Disease = lazy(() => import('./pages/disease'));
 const NotFound = lazy(() => import('./pages/notFound'));
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route exact path={ ROUTES.RESULTS } component={Results}/>
               <Route exact path={ ROUTES.STATISTICS } component={Statistics}/>
               <Route exact path={ ROUTES.ABOUT } component={About}/>
+              <Route exact path={ ROUTES.DISEASE } component={Disease}/>
               <Route component={NotFound}/>
             </Switch>
           </Suspense>

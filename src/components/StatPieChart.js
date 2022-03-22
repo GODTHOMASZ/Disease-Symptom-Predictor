@@ -43,22 +43,25 @@ export default function AnalysisComp() {
         return (
             
                 <Container>
-                    <PieChart width={500} height={500}>
-                        <Pie
-                            data={data}
-                            cx="50%"
-                            cy="50%"
-                            labelLine={false}
-                            outerRadius={200}
-                            fill="#8884d8"
-                            label={renderCustomizedLabel}
-                            dataKey="value"
-                        >
-                            {data.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                            ))}
-                        </Pie>
-                    </PieChart>
+                    <div className='d-flex d-sm-inline-flex'>
+                        <PieChart width={500} height={500}>
+                            <Pie
+                                data={data}
+                                cx="50%"
+                                cy="50%"
+                                labelLine={false}
+                                outerRadius={200}
+                                fill="#8884d8"
+                                label={renderCustomizedLabel}
+                                dataKey="value"
+                            >
+                                {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                ))}
+                            </Pie>
+                        </PieChart>
+                        <div className='border w-50'>fsdfsdfsdfsdf</div>
+                    </div>
                 </Container>
         )
 }
